@@ -1,12 +1,11 @@
-int Led_pin = 3; // 디지털 3번 핀에 LED 연결
-
 void setup() {
- pinMode(Led_pin, OUTPUT); // 디지털 핀 출력핀으로 설정
+ pinMode(5,INPUT_PULLUP); 
+ Serial.begin(9600); 
 }
 
 void loop() {
-  digitalWrite(Led_pin,HIGH); //3번 핀으로 5V 
-  delay(1000);
-  digitalWrite(Led_pin,LOW); //3번 핀으로 0V
-  delay(1000);
+  int d_sig = digitalRead(5); 
+
+  Serial.println(d_sig); 
+  delay(50);
 }
