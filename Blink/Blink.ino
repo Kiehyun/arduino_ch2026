@@ -22,16 +22,16 @@
   https://docs.arduino.cc/built-in-examples/basics/Blink/
 */
 
-// the setup function runs once when you press reset or power the board
+// setup 함수는 리셋 버튼을 누르거나 보드에 전원을 켤 때 한 번만 실행됩니다.
 void setup() {
-  // initialize digital pin LED_BUILTIN as an output.
+  // 내장 LED 핀(LED_BUILTIN)을 출력으로 설정합니다.
   pinMode(LED_BUILTIN, OUTPUT);
 }
 
-// the loop function runs over and over again forever
+// loop 함수는 계속 반복해서 실행됩니다.
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);  // change state of the LED by setting the pin to the HIGH voltage level
-  delay(1000);                      // wait for a second
-  digitalWrite(LED_BUILTIN, LOW);   // change state of the LED by setting the pin to the LOW voltage level
-  delay(1000);                      // wait for a second
+  digitalWrite(LED_BUILTIN, HIGH);  // 핀에 HIGH(5V) 전압을 주어 LED를 켭니다.
+  delay(1000);                      // 1초(1000ms) 동안 기다립니다.
+  digitalWrite(LED_BUILTIN, LOW);   // 핀에 LOW(0V) 전압을 주어 LED를 끕니다.
+  delay(1000);                      // 1초(1000ms) 동안 기다립니다.
 }

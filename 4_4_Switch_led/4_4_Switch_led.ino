@@ -1,12 +1,12 @@
-int led = 3;  // LED를 3번 핀으로 선언합니다.
-int sw = 5;   // 스위치를 5번 핀으로 선언합니다.
+int led = 3;
+int sw = 5;
 
-boolean ledState = LOW;     // LED의 현재 상태 (꺼짐/켜짐)를 저장
+boolean ledState = LOW;     // LED의 현재 상태  꺼짐/켜짐)를 저장
 boolean lastButtonState = HIGH; // 이전 버튼의 상태를 저장
 
 void setup() {
-  pinMode(led, OUTPUT);       // LED 핀을 출력으로 설정
-  pinMode(sw, INPUT_PULLUP);  // 스위치 핀을 내부 풀업 입력으로 설정
+  pinMode(led, OUTPUT);
+  pinMode(sw, INPUT_PULLUP);
 }
 
 void loop() {
@@ -16,10 +16,11 @@ void loop() {
   // 버튼을 누른 순간 (평소 HIGH였다가 누르는 순간 LOW가 됨)을 감지
   if (lastButtonState == HIGH && currentButtonState == LOW) {
     ledState = !ledState; // LED 상태를 반전 (꺼져있으면 켜고, 켜져있으면 끔)
-    digitalWrite(led, ledState);  // 바뀐 상태를 LED에 적용
+    digitalWrite(led, ledState);
     delay(50); // 버튼을 누를 때 발생하는 노이즈(채터링) 방지
   }
 
   // 다음 루프를 위해 현재 버튼 상태를 이전 상태 변수에 저장
   lastButtonState = currentButtonState;
 }
+

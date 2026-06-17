@@ -1,3 +1,4 @@
+// 7세그먼트의 각 LED(a~g)를 연결할 아두이노 핀 번호를 정합니다.
 #define ledA 8
 #define ledB 9
 #define ledC 2
@@ -5,7 +6,7 @@
 #define ledE 4
 #define ledF 6
 #define ledG 5
- 
+
 void setup()
 {
   //각각의 핀들을 OUTPUT으로 설정해 준다.
@@ -31,7 +32,7 @@ A~F, 0~9까지 표시하는 함수
 */
 void clr()
 {
-  //Clears the LED
+  // 모든 세그먼트를 꺼서 화면을 지움
   digitalWrite(ledA, LOW);
   digitalWrite(ledB, LOW);
   digitalWrite(ledC, LOW);
@@ -42,6 +43,7 @@ void clr()
 }
  
  
+// 문자 'A'를 표시
 void char_A()
 {
   digitalWrite(ledD, LOW);
@@ -55,7 +57,7 @@ void char_A()
  
 void char_B()
 {
-  //Displays B
+  // 문자 'B'를 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);
@@ -67,7 +69,7 @@ void char_B()
  
 void char_C()
 {
-  //Displays C
+  // 문자 'C'를 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);
@@ -79,7 +81,7 @@ void char_C()
  
 void char_D()
 {
-  //Displays D
+  // 문자 'D'를 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);
@@ -91,7 +93,7 @@ void char_D()
  
 void char_E()
 {
-  //Displays E
+  // 문자 'E'를 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);
@@ -103,7 +105,7 @@ void char_E()
  
 void char_F()
 {
-  //Displays F
+  // 문자 'F'를 표시
   digitalWrite(ledD, LOW);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);
@@ -116,7 +118,7 @@ void char_F()
  
 void one()
 {
-  //Displays 1
+  // 숫자 '1'을 표시
   digitalWrite(ledD, LOW);
   digitalWrite(ledE, LOW);
   digitalWrite(ledF, LOW);
@@ -128,7 +130,7 @@ void one()
  
 void two()
 {
-  //Displays 2
+  // 숫자 '2'를 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, LOW);
@@ -140,7 +142,7 @@ void two()
  
 void three()
 {
-  //Displays 3
+  // 숫자 '3'을 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, LOW);
   digitalWrite(ledF, LOW);
@@ -152,7 +154,7 @@ void three()
  
 void four()
 {
-  //Displays 4
+  // 숫자 '4'를 표시
   digitalWrite(ledD, LOW);
   digitalWrite(ledE, LOW);
   digitalWrite(ledF, HIGH);
@@ -164,7 +166,7 @@ void four()
  
 void five()
 {
-  //Displays 5
+  // 숫자 '5'를 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, LOW);
   digitalWrite(ledF, HIGH);
@@ -176,7 +178,7 @@ void five()
  
 void six()
 {
-  //Displays 6
+  // 숫자 '6'을 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);
@@ -188,7 +190,7 @@ void six()
  
 void seven()
 {
-  //Displays 7
+  // 숫자 '7'을 표시
   digitalWrite(ledD, LOW);
   digitalWrite(ledE, LOW);
   digitalWrite(ledF, LOW);
@@ -200,7 +202,7 @@ void seven()
  
 void eight()
 {
-  //Displays 8
+  // 숫자 '8'을 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);
@@ -212,7 +214,7 @@ void eight()
  
 void nine()
 {
-  //Displays 9
+  // 숫자 '9'를 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, LOW);
   digitalWrite(ledF, HIGH);
@@ -224,7 +226,7 @@ void nine()
  
 void zero()
 {
-  //Displays 0
+  // 숫자 '0'을 표시
   digitalWrite(ledD, HIGH);
   digitalWrite(ledE, HIGH);
   digitalWrite(ledF, HIGH);

@@ -7,10 +7,10 @@ void setup() {
 }
 
 void loop() {
-  if (digitalRead(sw) == LOW) {        
-    digitalWrite(led, HIGH);       
+  if (digitalRead(sw) == LOW) {   // 스위치가 눌리면 (LOW)
+    digitalWrite(led, HIGH);      // LED를 켭니다.
   }
-  else {
-    digitalWrite(led, LOW);
+  else {                          // 스위치가 눌리지 않으면
+    digitalWrite(led, LOW);       // LED를 끕니다.
   }
 }
