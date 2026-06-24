@@ -1,5 +1,5 @@
-int R_pin = 13;  // 빨강(R) LED를 13번 핀에 연결
-int G_pin = 12;  // 초록(G) LED를 12번 핀에 연결
+int R_pin = 9;  // 빨강(R) LED를 9번 핀에 연결
+int G_pin = 10;  // 초록(G) LED를 10번 핀에 연결
 int B_pin = 11;  // 파랑(B) LED를 11번 핀에 연결
 
 void setup(){
